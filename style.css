@@ -1,0 +1,257 @@
+body {
+  /* display: flex; */
+  justify-content: center;
+  height: calc(100vh - 8em);
+  color: rgba(255,255,255,.75);
+  background-color: rgb(25,25,25);
+}
+html{
+  /* min-height: 100%; */
+  /* overflow: hidden; */
+}
+
+#vantajs {
+width: 100vw;
+height: 100vh;
+}
+
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: #919191;
+  width: 100%;
+  position: fixed;
+}
+
+/* Global */
+
+.line-1{
+    position: relative;
+    top: 50%;
+    width: 24em;
+    margin: 0 auto;
+    /* border-right: 2px solid rgba(255,255,255,.75); */
+    font-size: 300%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    font-family: 'Raleway', sans-serif;
+}
+
+#Project {
+  font-family: 'Overpass', sans-serif;
+  font-weight: 600;
+  font-size: 110%;
+  letter-spacing: 0.2rem;
+  color: rgba(255,255,255,.75);
+}
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: transparent;}
+  to{border-right-color: transparent;}
+}
+
+.home {
+  transform-origin: 0 0;
+  transform: rotateZ(-90deg);
+  position: absolute;
+  right: 0;
+  top: 25rem;
+  font-family: 'Overpass', sans-serif;
+  font-size: 250%;
+  letter-spacing: 0.5rem;
+  font-weight: 600;
+}
+
+.socialbtn {
+  opacity: 0.7;
+  transition: 0.4s;
+}
+
+
+
+.fa-html5:hover {
+  color: #dd4b25;
+  font-size: 800%;
+}
+.fa-php:hover {
+  color: #4d588f;
+  font-size: 800%;
+}
+.fa-adobe:hover {
+  color: #e61b23;
+  font-size: 800%;
+}
+.fa-css3-alt:hover {
+ color: #254bdd;
+ font-size: 800%;
+}
+.fa-js-square:hover {
+  color: #e2c430;
+  font-size: 800%;
+}
+
+.skills {
+  transform-origin: 0 0;
+  transform: rotateZ(-90deg);
+  margin-left: 2.8rem;;
+  position: absolute;
+  top: 65rem;
+  font-family: 'Overpass', sans-serif;
+  font-size: 250%;
+  letter-spacing: 0.5rem;
+  font-weight: 600;
+}
+
+
+.container {
+  position: relative;
+  width: 30%;
+  -webkit-filter: grayscale(70%);
+  filter: grayscale(70%);
+  margin-top : 150px;
+}
+.container2 {
+  position: relative;
+  width: 30%;
+  -webkit-filter: grayscale(70%);
+  filter: grayscale(70%);
+  grid-gap: 1rem;
+}
+
+.image {
+  display: block;
+  width: 30%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(25,25,25);
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+
+}
+
+.container:hover .overlay {
+  width: 100%;
+}
+.container2:hover .overlay {
+  width: 100%;
+}
+
+.text {
+  color: #919191;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 50%;
+}
+.text:hover {
+  transition: 0.5s;
+  color: white;
+}
+
+.screen2 {
+  width: 85%
+}
+
+
+.typewrite {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  letter-spacing: 0.8rem;
+  padding-bottom: 100px;
+  }
+
+  hr {
+      border: 1px solid #919191;
+  }
+
+
+.social-bar {
+  padding-top: 200px;
+  padding-bottom: 50px;
+  grid-gap: 100px;
+  color: #919191;
+}
+.social-bar:hover {
+  opacity: 0.7;
+  transition: 0.9s;
+}
+
+.fa-linkedin-in:hover {
+  color: #0092cd;
+  transition: 0.9s;
+}
+.fa-facebook:hover {
+  color: #3a5698;
+  transition: 0.9s;
+}
+.fa-twitter:hover {
+  color: #1c9ceb;
+  transition: 0.9s;
+}
+.cat {
+  transition: 0.9s;
+
+}
+
+.social {
+  transform-origin: 0 0;
+  transform: rotateZ(-90deg);
+  position: absolute;
+  right: 0;
+  top: 131.6rem;
+  font-family: 'Overpass', sans-serif;
+  font-size: 250%;
+  font-weight: 600;
+}
+
+.footer {
+  background-color: rgb(25,25,25);
+}
+
+h1 {
+  font-family: 'Overpass', sans-serif;
+}
+
+.about-me {
+  text-align: right;
+}
+.text-about {
+  text-align: right;
+
+}
+p {
+  font-family: 'Raleway', sans-serif;
+}
+
+.vl {
+  border-left: 1px solid #919191;
+  height: 180px;
+  position: absolute;
+  left: 100.5%;
+  margin-left: -3px;
+  top: 0;
+}
